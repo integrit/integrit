@@ -117,11 +117,10 @@ html :
 	echo $$INTEGRIT_VERSION; \
 	sed "s/[@]INTEGRIT_VERSION[@]/$$INTEGRIT_VERSION/g" \
 	  integrit.texi.in > integrit.texi \
-	  && ~/opt/texinfo-4.2/bin/makeinfo --html --no-split integrit.texi
-# 	  && makeinfo --html integrit.texi
+ 	  && makeinfo --html --no-split integrit.texi
 
 clean	:
-	rm -f integrit.1 i-viewdb.1 i-ls.1 integrit.texi
+	rm -f integrit.1 i-viewdb.1 i-ls.1 integrit.texi integrit.html
 
 realclean : clean
 
