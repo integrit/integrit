@@ -312,7 +312,7 @@ inline static void do_rule(integrit_t *it, char *buf)
       buf[n_switches - 1]	 = '\0';
       --n_switches;
     }
-    if (strspn(buf, "SsIiPpLlUuGgZzAaMmCcRr") != n_switches)
+    if (strspn(buf, "SsIiPpTtDdLlUuGgZzAaMmCcRr") != n_switches)
       die(__FUNCTION__,
 	  "Error: unrecognized check switch in conf file rule for %s",
 	  namebuf);
