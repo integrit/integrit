@@ -25,17 +25,15 @@ dnl AC_CONFIG_AUX_DIR(..)
 
 # ----- you can override these values by setting environment variables
 # CC=my-compiler ./configure
-CC=${CC:-"gcc"}
 # CFLAGS="-g foo -x bar" ./configure
 CFLAGS=${CFLAGS:-"-g -Wall -O2"}
 STATIC=${STATIC:-"-static"}
 
 dnl Checks for programs.
 AC_PROG_CC
-AC_PROGRAM_PATH(RM, rm , rm)
 dnl syncing is the job of the O.S., and users can always do "make; sync"
 dnl AC_PROGRAM_PATH(SYNC, sync, sync)
-AC_PROGRAM_PATH(AR, ar, ar)
+AM_PROG_AR
 AC_PROG_MAKE_SET
 AC_PROG_RANLIB
 

@@ -26,7 +26,6 @@ EXTRA_DEFS=${EXTRA_DEFS-""}
 
 # ----- you can override these values by setting environment variables
 # CC=my-compiler ./configure
-CC=${CC:-"gcc"}
 # CFLAGS="-g foo -x bar" ./configure
 CFLAGS=${CFLAGS-"-g -Wall -O2"}
 STATIC=${STATIC-"-static"}
@@ -53,10 +52,9 @@ AC_PROG_CC
 dnl AC_PROG_LEX
 AC_PROG_MAKE_SET
 AC_PROG_AWK
-AC_PROGRAM_PATH(RM, rm , rm)
 dnl syncing is the job of the O.S., and users can always do "make; sync"
 dnl AC_PROGRAM_PATH(SYNC, sync, sync)
-AC_PROGRAM_PATH(AR, ar, ar)
+AM_PROG_AR
 AC_PROG_RANLIB
 
 dnl ---------- let users override the install that configure finds
