@@ -31,6 +31,7 @@ STATIC=${STATIC:-"-static"}
 
 dnl Checks for programs.
 AC_PROG_CC
+AC_PROGRAM_PATH(RM, rm , rm)
 dnl syncing is the job of the O.S., and users can always do "make; sync"
 dnl AC_PROGRAM_PATH(SYNC, sync, sync)
 AM_PROG_AR

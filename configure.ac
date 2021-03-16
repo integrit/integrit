@@ -52,6 +52,7 @@ AC_PROG_CC
 dnl AC_PROG_LEX
 AC_PROG_MAKE_SET
 AC_PROG_AWK
+AC_PROGRAM_PATH(RM, rm , rm)
 dnl syncing is the job of the O.S., and users can always do "make; sync"
 dnl AC_PROGRAM_PATH(SYNC, sync, sync)
 AM_PROG_AR

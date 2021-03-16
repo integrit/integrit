@@ -87,14 +87,14 @@ include $(srcdir)/dep.mak
 # 	$(CC) $(CPPFLAGS) $(CFLAGS) $(DEFS) -o $@ -c $<
 
 clean	: 
-	${RM} -f $(OBJ) $(LIBRARY) hashtest hashtest.o 
+	$(RM) -f $(OBJ) $(LIBRARY) hashtest hashtest.o
 
 realclean : clean
-	${RM} -f *~ core a.out
+	$(RM) -f *~ core a.out
 
 distclean : clean
-	${RM} -f config.cache config.status config.log config.h 
-	${RM} -f Makefile stdint.h
+	$(RM) -f config.cache config.status config.log config.h
+	$(RM) -f Makefile stdint.h
 
 install : $(LIBRARY)
 	@for d in @libdir@ @includedir@; do \
