@@ -21,6 +21,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define	ELC_CDB_PUT_H
 
 int cdb_put(struct cdb_make *c,
-	    char *key, unsigned klen, void *val, unsigned vlen);
+	    char *key, size_t klen, void *val, size_t vlen);
 
 #endif
