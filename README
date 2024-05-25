@@ -269,8 +269,8 @@ Here's a table of letters and the corresponding options:
         s	checksum
         i	inode
         p	permissions
-        t	file type
-        d	device type (if file is blk or chr special)
+        t	file type (experimental)
+        d	device type (experimental) (if file is blk or chr special)
         l	number of links
         u	uid
         g	gid
@@ -279,6 +279,13 @@ Here's a table of letters and the corresponding options:
         m	modification time
 	c	change file info time (ctime)
 	r	reset access time
+
+The two "experimental" options above were undocumented
+until debian maintainers added documentation.
+Please create a GitHub issue for feedback about your experience
+with them if you use these options.
+
+https://github.com/integrit/integrit/issues
 
 NOTE: As a convenience to the user, on files you have opted to reset
       the atime, integrit will always ignore the ctime, since
@@ -362,14 +369,8 @@ others who may have problems similar to yours.  If you contact me
 directly I will probably copy my response to the mailing list unless
 you ask me not to.
 
-    Ed L Cashin <ecashin@users.sourceforge.net>
-  
-    P.O. Box 2457
-    Athens GA 30612
+    Ed L Cashin <ed.cashin@acm.org>
 
-If you'd like to give me money, you can do it easily through paypal.
-The integrit homepage has a link, or you can use this one:
-
-    https://www.paypal.com/xclick/business=ecashin%40safe-mail.net&item_name=integrit+donations&item_number=integrit
+If you'd like to give me money, be kind to someone else instead.
 
 
